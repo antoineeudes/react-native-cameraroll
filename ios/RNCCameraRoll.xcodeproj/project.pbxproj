@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		143879351AAD238D00F088A5 /* RNCCameraRollManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 143879341AAD238D00F088A5 /* RNCCameraRollManager.m */; };
-		2F2D96EC28ABF12100B2EF6B /* RNCCameraRollPermissionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D96EB28ABF12100B2EF6B /* RNCCameraRollPermissionModule.m */; };
+		3CBC35742A0F36D500E13590 /* RNCCameraRoll.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3CBC35732A0F36D500E13590 /* RNCCameraRoll.mm */; };
+		3CBC35762A0F36E400E13590 /* RNCCameraRollPermission.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3CBC35752A0F36E400E13590 /* RNCCameraRollPermission.mm */; };
+		3CBC35782A0F36FD00E13590 /* RNCPermissionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBC35772A0F36FD00E13590 /* RNCPermissionHelper.m */; };
 		4F788CB822226740001DB9D2 /* RNCAssetsLibraryRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F788CB722226740001DB9D2 /* RNCAssetsLibraryRequestHandler.m */; };
 /* End PBXBuildFile section */
 
@@ -25,10 +26,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		143879331AAD238D00F088A5 /* RNCCameraRollManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = RNCCameraRollManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		143879341AAD238D00F088A5 /* RNCCameraRollManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCCameraRollManager.m; sourceTree = "<group>"; };
-		2F2D96EA28ABF0FE00B2EF6B /* RNCCameraRollPermissionModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNCCameraRollPermissionModule.h; sourceTree = "<group>"; };
-		2F2D96EB28ABF12100B2EF6B /* RNCCameraRollPermissionModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNCCameraRollPermissionModule.m; sourceTree = "<group>"; };
+		3CBC35732A0F36D500E13590 /* RNCCameraRoll.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RNCCameraRoll.mm; sourceTree = "<group>"; };
+		3CBC35752A0F36E400E13590 /* RNCCameraRollPermission.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RNCCameraRollPermission.mm; sourceTree = "<group>"; };
+		3CBC35772A0F36FD00E13590 /* RNCPermissionHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNCPermissionHelper.m; sourceTree = "<group>"; };
+		3CBC35792A0F371900E13590 /* RNCCameraRoll.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RNCCameraRoll.xcodeproj; sourceTree = "<group>"; };
 		4F788CB622226740001DB9D2 /* RNCAssetsLibraryRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCAssetsLibraryRequestHandler.h; sourceTree = "<group>"; };
 		4F788CB722226740001DB9D2 /* RNCAssetsLibraryRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCAssetsLibraryRequestHandler.m; sourceTree = "<group>"; };
 		58B5115D1A9E6B3D00147676 /* libRNCCameraRoll.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNCCameraRoll.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,15 +46,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CBC357A2A0F371900E13590 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
 		58B511541A9E6B3D00147676 = {
 			isa = PBXGroup;
 			children = (
-				2F2D96EB28ABF12100B2EF6B /* RNCCameraRollPermissionModule.m */,
-				2F2D96EA28ABF0FE00B2EF6B /* RNCCameraRollPermissionModule.h */,
+				3CBC35792A0F371900E13590 /* RNCCameraRoll.xcodeproj */,
+				3CBC35772A0F36FD00E13590 /* RNCPermissionHelper.m */,
+				3CBC35752A0F36E400E13590 /* RNCCameraRollPermission.mm */,
+				3CBC35732A0F36D500E13590 /* RNCCameraRoll.mm */,
 				4F788CB622226740001DB9D2 /* RNCAssetsLibraryRequestHandler.h */,
 				4F788CB722226740001DB9D2 /* RNCAssetsLibraryRequestHandler.m */,
-				143879331AAD238D00F088A5 /* RNCCameraRollManager.h */,
-				143879341AAD238D00F088A5 /* RNCCameraRollManager.m */,
 				58B5115E1A9E6B3D00147676 /* Products */,
 			);
 			indentWidth = 2;
@@ -103,7 +109,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 58B511581A9E6B3D00147676 /* Build configuration list for PBXProject "RNCCameraroll" */;
+			buildConfigurationList = 58B511581A9E6B3D00147676 /* Build configuration list for PBXProject "RNCCameraRoll" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,6 +120,12 @@
 			mainGroup = 58B511541A9E6B3D00147676;
 			productRefGroup = 58B5115E1A9E6B3D00147676 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3CBC357A2A0F371900E13590 /* Products */;
+					ProjectRef = 3CBC35792A0F371900E13590 /* RNCCameraRoll.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				58B5115C1A9E6B3D00147676 /* RNCCameraRoll */,
@@ -126,9 +138,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CBC35782A0F36FD00E13590 /* RNCPermissionHelper.m in Sources */,
+				3CBC35762A0F36E400E13590 /* RNCCameraRollPermission.mm in Sources */,
+				3CBC35742A0F36D500E13590 /* RNCCameraRoll.mm in Sources */,
 				4F788CB822226740001DB9D2 /* RNCAssetsLibraryRequestHandler.m in Sources */,
-				143879351AAD238D00F088A5 /* RNCCameraRollManager.m in Sources */,
-				2F2D96EC28ABF12100B2EF6B /* RNCCameraRollPermissionModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +286,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58B511581A9E6B3D00147676 /* Build configuration list for PBXProject "RNCCameraroll" */ = {
+		58B511581A9E6B3D00147676 /* Build configuration list for PBXProject "RNCCameraRoll" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B5116F1A9E6B3D00147676 /* Debug */,
